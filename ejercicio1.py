@@ -1,4 +1,4 @@
-lista = ["perro","gato","hamster","koala","tigre","ciervo"]
+lista = ["perro","gato","hamster","koala","tigre","ciervo","jabalí","conejo","cabra"]
 print(lista)
 def dicotomia(palabra, longitud):
   if palabra == lista[round(longitud/2)]:
