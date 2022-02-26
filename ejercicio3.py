@@ -6,14 +6,17 @@ def ordenrgb(bandera, posicion):
   red = []
   green = []
   blue = []
-  total = [red,green,blue]
-  if bandera[posicion] == "R":
+  if bandera[posicion] == "R" and posicion < len(bandera):
     red.append("R")
+    print(red)
     ordenrgb(bandera, posicion+1)
-
-  print(total)
-  
-  
+  elif bandera[posicion] == "G" and posicion < len(bandera):
+    green.append("G")
+    ordenrgb(bandera, posicion+1)
+    print(green)
+  elif bandera[posicion] == "B" and posicion < len(bandera):
+    blue.append("B")
+    ordenrgb(bandera, posicion+1)
   
 ordenrgb(bandera, 0)
   
