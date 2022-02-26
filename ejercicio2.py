@@ -1,6 +1,6 @@
 # Palíndromos
 def palindromo(contenido):
-  a,b = 'áéíóúüñÁÉÍÓÚÜÑ','aeiouunAEIOUUN'
+  a,b = 'áéíóúüñÁÉÍÓÚÜ','aeiouunAEIOUU'
   tilde = str.maketrans(a,b)
   contenido = contenido.lower() # Convierto el texto en minúsculas.
   contenido = contenido.replace(' ', '') # Quito los espacios.
