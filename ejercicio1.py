@@ -1,4 +1,5 @@
-lista = ["perro","gato","hamster","koala","tigre","ciervo","jabalí","conejo","cabra"]
+# Búsqueda por dicotomía en una tabla ordenada
+lista = ["perro","gato","hamster","koala","tigre","ciervo","jabalí","conejo","cabra","ratón","rata","serpiente","hormiga","lobo","lince"]
 print(lista)
 def dicotomia(palabra, longitud):
   if palabra == lista[round(longitud/2)]:

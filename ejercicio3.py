@@ -1,5 +1,5 @@
-# Bandera:
-bandera, red, green, blue = ["R","B","G","G","G","B","R","R","B","B","R","G","R","R","B"], [], [], []   # Creo las listas que posteriormente fusionaré en una.
+# La bandera de Dijkstra:
+bandera, red, green, blue = ["R","B","G","G","G","B","R","R","B","B","R","G","R","R","B","R","B","G","G","G","R","B"], [], [], []   # Creo las listas que posteriormente fusionaré en una.
 print("A continuación se va a ordenar la siguiente bandera: " + str(bandera))
 def ordenrgb(bandera, posicion):
   if posicion < len(bandera):
