@@ -12,7 +12,20 @@ En este [repositorio](https://github.com/jmedina28/EjerciciosRecursividad) queda
 El código empleado para resolverlo es el siguiente:
 
 ```python
-
+# Búsqueda por dicotomía en una tabla ordenada
+listainicial = ["perro","gato","hamster","koala","tigre","ciervo","jabalí","conejo","cabra","ratón","rata","serpiente","hormiga","lobo","lince"]
+lista = sorted(listainicial) # Ordeno la lista
+print(lista)
+def dicotomia(palabra, longitud):
+  if palabra == lista[round(longitud/2)]:
+    print("La palabra es " + str(lista[round(longitud/2)]))
+    if longitud >= 0:
+      print("Se encuentra en el punto " + str(round(longitud/2)))
+    else:
+      print("Se encuentra en el punto " + str(round(longitud/2)+len(lista)))
+  else:
+    dicotomia(palabra, longitud-1)
+dicotomia(str(input("Introduzca una palabra que desee localizar de la lista dada: ")), len(lista))
 ```
 
 ## Ejercicio 2: Palíndromos
